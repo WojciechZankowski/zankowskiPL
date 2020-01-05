@@ -1,0 +1,190 @@
+{
+  "basics": {
+    "label": "Senior Developer",
+    "characterClass": "Programmer",
+    "quote": "Be the change you want to see in the world.",
+    "website": "https://www.zankowski.pl",
+    "email": "wojciech(@at)zankowski.pl",
+    "other": [],
+    "name": "Wojciech Zankowski",
+    "summary": "**Imaginary full-stack software developer with 6+ years industry experience** specializing in cloud-driven web applications and middleware. A native of southern CA, Jane enjoys hiking, mystery novels, and the company of Rufus, her two year old beagle.",
+    "picture": "jane.png",
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "WojciechZankowski",
+        "url": "https://github.com/WojciechZankowski"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Area 52",
+      "website": "https://area52.io/does-not-exist",
+      "position": "Head Code Ninja",
+      "startDate": "2013-09",
+      "summary": "Development team manager for [**Quantum Diorama**](https://en.wikipedia.org/wiki/Vaporware), a distributed molecular modeling and analysis suite for Linux and OS X.",
+      "highlights": [
+        "Managed a 5-person development team",
+        "Accomplishment 2",
+        "Etc."
+      ]
+    },
+    {
+      "company": "Area 52",
+      "website": "https://area52.io/does-not-exist",
+      "position": "Head Code Ninja",
+      "startDate": "2013-09",
+      "summary": "Development team manager for [**Quantum Diorama**](https://en.wikipedia.org/wiki/Vaporware), a distributed molecular modeling and analysis suite for Linux and OS X.",
+      "highlights": [
+        "Managed a 5-person development team",
+        "Accomplishment 2",
+        "Etc."
+      ]
+    },
+    {
+      "company": "Veridian Dynamics",
+      "website": "https://en.wikipedia.org/wiki/Better_Off_Ted#Plot",
+      "position": "Principal Developer",
+      "startDate": "2011-07",
+      "endDate": "2013-08",
+      "summary": "Developer on numerous projects culminating in technical lead role for the [Jabberwocky project](http://betteroffted.wikia.com/wiki/Jabberwocky) and promotion to principal developer.",
+      "highlights": [
+        "Managed a 5-person development team",
+        "Accomplishment 2",
+        "Etc."
+      ]
+    },
+    {
+      "company": "Stark Industries",
+      "position": "IT Administrator",
+      "startDate": "2008-10",
+      "endDate": "2011-06",
+      "summary": "Junior programmer with heavy code responsibilities. Promoted to intermediate role after 6 months.",
+      "highlights": [
+        "Promoted to intermediate developer after 6 months",
+        "Accomplishment 2",
+        "Etc."
+      ]
+    },
+    {
+      "company": "Dunder Mifflin",
+      "position": "Intern",
+      "startDate": "2008-06",
+      "endDate": "2008-09",
+      "summary": "Performed IT administration and deployments for Dunder Mifflin.",
+      "highlights": [
+        "Supervised roll-out of Dunder Mifflin Infinity website.",
+        "Performed mission-critical system backups and ",
+        "Etc."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Wroclaw University of Science and Technology",
+      "startDate": "2012-10",
+      "endDate": "2016-01"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Backend",
+      "keywords": [
+        "Java",
+        "Java EE",
+        "FIX 4.2 - 5.0",
+        "Spring Framework",
+        "Spring Boot",
+        "Hibernate",
+        "Google Guice",
+        "Python",
+        "SQL - MySQL, Oracle"
+      ]
+    },
+    {
+      "name": "Frontend",
+      "keywords": [
+        "Angular 2+",
+        "Typescript",
+        "D3 charts",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "name": "Tools",
+      "keywords": [
+        "Intellij IDEA",
+        "Eclipse",
+        "GIT",
+        "SVN",
+        "Docker",
+        "Eclipse MAT",
+        "VisualVM",
+        "JProfile",
+        "JMeter",
+        "SoapUI",
+        "Postman"
+      ]
+    },
+    {
+      "name": "Other",
+      "keywords": [
+        "TeamCity",
+        "Jenkins",
+        "Enterprise Architect",
+        "Gliffy",
+        "Balsamiq"
+      ]
+    }
+  ],
+  "interests": [
+    {
+      "name": "Sports",
+      "summary": "Football (Soccer), Squash, Tennis",
+      "keywords": [
+        "Football (Soccer)",
+        "Squash",
+        "Tennis"
+      ]
+    },
+    {
+      "name": "Puzzle",
+      "summary": "Rubik's Cube, Sudoku",
+      "keywords": [
+        "Rubik's cube",
+        "Sudoku"
+      ]
+    },
+    {
+      "name": "Cars",
+      "summary": "",
+      "keywords": []
+    }
+  ],
+  "references": [
+    {
+      "name": "Patryk Stopyra - Software Developer @ UBS",
+      "reference": "What is most characteristic for him - it's his engagement. When he obtains a problem to be solved - he focuses on it, gets 100% involved into the subject and does not give up until he comes out with an accurate solution. And he is usually extremely efficient with this."
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "level": "Fluent"
+    },
+    {
+      "language": "Spanish",
+      "level": "Fluent"
+    },
+    {
+      "language": "German",
+      "level": "Basic"
+    },
+    {
+      "language": "Polish",
+      "level": "Native"
+    }
+  ]
+}

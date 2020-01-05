@@ -1,0 +1,282 @@
+{
+  "name": "Wojciech Zankowski",
+  "meta": {
+    "format": "FRESH@0.6.0",
+    "version": "0.5.0"
+  },
+  "info": {
+    "label": "Senior Developer",
+    "characterClass": "Programmer",
+    "brief": "**Imaginary full-stack software developer with 6+ years industry experience** specializing in cloud-driven web applications and middleware. A native of southern CA, Jane enjoys hiking, mystery novels, and the company of Rufus, her two year old beagle.",
+    "image": "jane.png",
+    "quote": "Be the change you want to see in the world."
+  },
+  "location": {
+    "address": "123 Somewhere Rd.",
+    "city": "Mountain View",
+    "region": "CA",
+    "code": "94035",
+    "country": "US"
+  },
+  "contact": {
+    "website": "http://www.zankowski.pl",
+    "email": "wojciech(@at)zankowski.pl",
+    "other": []
+  },
+  "projects": [
+    {
+      "title": "IEXTrading4j",
+      "category": "Open Source",
+      "start": "2017-03",
+      "repo": "https://github.com/WojciechZankowski/iextrading4j",
+      "url": "https://github.com/WojciechZankowski/iextrading4j",
+      "summary": "IEX Trading allows to receive market and financial data. Their data can be accessed in real-time during market session, can be downloaded as recorded sessions in PCAP files or can be accessed by bunch of different API-s. Ecosystem of libraries allows to access each type of data from binary packets, REST, SSE or Websocket services.",
+      "keywords": [],
+      "media": []
+    },
+    {
+      "title": "FIX Parser",
+      "category": "Open Source",
+      "start": "2016-03",
+      "repo": "https://github.com/OpenBlazar/blazar-fix-parser",
+      "url": "https://github.com/OpenBlazar/blazar-fix-parser",
+      "summary": "Ultimate tool for FIX developers and testers. It allows to upload your custom FIX dictionaries and make your daily work much easier with better field definition, compare FIX messages to find differences in fields values or remember and browse messages parsed in the past.",
+      "keywords": [],
+      "media": []
+    }
+  ],
+  "social": [
+    {
+      "label": "GitHub",
+      "network": "GitHub",
+      "user": "WojciechZankowski",
+      "url": "https://github.com/WojciechZankowski"
+    }
+  ],
+  "employment": {
+    "history": [
+      {
+        "employer": "Area 52",
+        "url": "https://area52.io/does-not-exist",
+        "position": "Head Code Ninja",
+        "summary": "Development team manager for [**Quantum Diorama**](https://en.wikipedia.org/wiki/Vaporware), a distributed molecular modeling and analysis suite for Linux and OS X.",
+        "start": "2013-09",
+        "keywords": [
+          "Agile",
+          "PM",
+          "C",
+          "C++",
+          "R",
+          "OpenGL",
+          "Boost",
+          "MySQL",
+          "PostgreSQL",
+          "JIRA"
+        ],
+        "highlights": [
+          "Managed a 5-person development team",
+          "Accomplishment 2",
+          "Etc."
+        ]
+      },
+      {
+        "employer": "Area 52",
+        "url": "https://area52.io/does-not-exist",
+        "position": "Head Code Ninja",
+        "summary": "Development team manager for [**Quantum Diorama**](https://en.wikipedia.org/wiki/Vaporware), a distributed molecular modeling and analysis suite for Linux and OS X.",
+        "start": "2013-09",
+        "keywords": [
+          "Agile",
+          "PM",
+          "C",
+          "C++",
+          "R",
+          "OpenGL",
+          "Boost",
+          "MySQL",
+          "PostgreSQL",
+          "JIRA"
+        ],
+        "highlights": [
+          "Managed a 5-person development team",
+          "Accomplishment 2",
+          "Etc."
+        ]
+      },
+      {
+        "employer": "Veridian Dynamics",
+        "url": "https://en.wikipedia.org/wiki/Better_Off_Ted#Plot",
+        "position": "Principal Developer",
+        "summary": "Developer on numerous projects culminating in technical lead role for the [Jabberwocky project](http://betteroffted.wikia.com/wiki/Jabberwocky) and promotion to principal developer.",
+        "start": "2011-07",
+        "end": "2013-08",
+        "keywords": [
+          "C++",
+          "C",
+          "Linux",
+          "R",
+          "Clojure"
+        ],
+        "highlights": [
+          "Managed a 5-person development team",
+          "Accomplishment 2",
+          "Etc."
+        ]
+      },
+      {
+        "employer": "Stark Industries",
+        "position": "IT Administrator",
+        "summary": "Junior programmer with heavy code responsibilities. Promoted to intermediate role after 6 months.",
+        "start": "2008-10",
+        "end": "2011-06",
+        "keywords": [
+          "Novell",
+          "Active Directory",
+          "Linux",
+          "Windows"
+        ],
+        "highlights": [
+          "Promoted to intermediate developer after 6 months",
+          "Accomplishment 2",
+          "Etc."
+        ]
+      },
+      {
+        "employer": "Empirica S.A.",
+        "position": "Intern",
+        "summary": "Performed IT administration and deployments for Dunder Mifflin.",
+        "start": "2015-07",
+        "end": "2017-08",
+        "keywords": [
+          "Novell",
+          "Active Directory",
+          "Linux",
+          "Windows"
+        ],
+        "highlights": [
+          "Supervised roll-out of Dunder Mifflin Infinity website.",
+          "Performed mission-critical system backups and ",
+          "Etc."
+        ]
+      }
+    ]
+  },
+  "education": {
+    "summary": "",
+    "level": "degree",
+    "degree": "BSCS",
+    "history": [
+      {
+        "institution": "Wroclaw University of Science and Technology",
+        "title": "Bachelor of Science in Systems Engineering",
+        "url": "https://pwr.edu.pl/en/",
+        "start": "2012-10",
+        "end": "2016-01",
+        "summary": "Faculty is teaching how to use the information tools, including writing simple programs, desiging data bases and active use of the Internet resources. The studies program involves elements of microeconomy, secrets of managing enterprise finances or the selected issues of market economy. They learn basics in law - especially in the civil law part, economic circulation, competition and consumer protection or intellectual and industrial property protection."
+      }
+    ]
+  },
+  "skills": {
+    "sets": [
+      {
+        "name": "Backend",
+        "skills": [
+          "Java",
+          "Java EE",
+          "FIX 4.2 - 5.0",
+          "Spring Framework",
+          "Spring Boot",
+          "Hibernate",
+          "Google Guice",
+          "Python",
+          "SQL - MySQL, Oracle"
+        ]
+      },
+      {
+        "name": "Frontend",
+        "skills": [
+          "Angular 2+",
+          "Typescript",
+          "D3 charts",
+          "HTML",
+          "CSS"
+        ]
+      },
+      {
+        "name": "Tools",
+        "skills": [
+          "Intellij IDEA",
+          "Eclipse",
+          "GIT",
+          "SVN",
+          "Docker",
+          "Eclipse MAT",
+          "VisualVM",
+          "JProfile",
+          "JMeter",
+          "SoapUI",
+          "Postman"
+        ]
+      },
+      {
+        "name": "Other",
+        "skills": [
+          "TeamCity",
+          "Jenkins",
+          "Enterprise Architect",
+          "Gliffy",
+          "Balsamiq"
+        ]
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "name": "Patryk Stopyra - Software Developer @ UBS",
+      "flavor": "professional",
+      "quote": "What is most characteristic for him - it's his engagement. When he obtains a problem to be solved - he focuses on it, gets 100% involved into the subject and does not give up until he comes out with an accurate solution. And he is usually extremely efficient with this."
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "level": "Fluent"
+    },
+    {
+      "language": "Spanish",
+      "level": "Fluent"
+    },
+    {
+      "language": "German",
+      "level": "Basic"
+    },
+    {
+      "language": "Polish",
+      "level": "Native"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Sports",
+      "summary": "Football (Soccer), Squash, Tennis",
+      "keywords": [
+        "Football (Soccer)",
+        "Squash",
+        "Tennis"
+      ]
+    },
+    {
+      "name": "Puzzle",
+      "summary": "Rubik's Cube, Sudoku",
+      "keywords": [
+        "Rubik's cube",
+        "Sudoku"
+      ]
+    },
+    {
+      "name": "Cars",
+      "summary": "",
+      "keywords": []
+    }
+  ]
+}

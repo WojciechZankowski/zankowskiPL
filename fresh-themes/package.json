@@ -1,0 +1,45 @@
+{
+  "name": "fresh-themes",
+  "version": "0.17.0-beta",
+  "description": "Multiformat themes and templates for your résumé / CV.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fresh-standard/fresh-themes.git"
+  },
+  "main": "index.js",
+  "keywords": [
+    "résumé",
+    "resume",
+    "CV",
+    "employment",
+    "portfolio",
+    "Handlebars",
+    "Underscore",
+    "Markdown",
+    "LaTeX",
+    "HTML",
+    "Word",
+    "Microsoft Word",
+    "PDF",
+    "Acrobat",
+    "Adobe",
+    "JSON",
+    "YAML"
+  ],
+  "author": "hacksalot <hacksalot@indevious.com> (https://github.com/hacksalot)",
+  "contributors": [
+    "hacksalot <hacksalot@indevious.com> (https://github.com/hacksalot)",
+    "Brett Hardin (https://github.com/bhardin)",
+    "hareekum (https://github.com/hareekum)",
+    "Jonathon Lui (https://jonathanlui.com)",
+    "Evan Plaice <evanplaice@gmail.com> (https://github.com/evanplaice)",
+    "Jonathan Wolfe (https://github.com/JonathanWolfe)",
+    "Ya Zhuang (https://github.com/zhuangya)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fresh-standard/fresh-themes/issues"
+  },
+  "homepage": "https://github.com/fresh-standard/fresh-themes",
+  "dependencies": { }
+}
