@@ -1,14 +1,10 @@
 {
   "basics": {
-    "label": "Senior Developer",
-    "characterClass": "Programmer",
-    "quote": "Be the change you want to see in the world.",
-    "website": "https://www.zankowski.pl",
+    "website": "http://www.zankowski.pl",
     "email": "wojciech(@at)zankowski.pl",
     "other": [],
     "name": "Wojciech Zankowski",
-    "summary": "**Imaginary full-stack software developer with 6+ years industry experience** specializing in cloud-driven web applications and middleware. A native of southern CA, Jane enjoys hiking, mystery novels, and the company of Rufus, her two year old beagle.",
-    "picture": "jane.png",
+    "summary": "**Self-driven, passionate and committed software engineer specializing in market trading and asset management discipline.** Flexible with languages, tools and everything that leads to good solution. Enjoying his life in beautiful area of Zürich.",
     "profiles": [
       {
         "network": "GitHub",
@@ -19,65 +15,39 @@
   },
   "work": [
     {
-      "company": "Area 52",
-      "website": "https://area52.io/does-not-exist",
-      "position": "Head Code Ninja",
-      "startDate": "2013-09",
-      "summary": "Development team manager for [**Quantum Diorama**](https://en.wikipedia.org/wiki/Vaporware), a distributed molecular modeling and analysis suite for Linux and OS X.",
-      "highlights": [
-        "Managed a 5-person development team",
-        "Accomplishment 2",
-        "Etc."
-      ]
+      "company": "Excelian | Luxoft Financial Services",
+      "website": "https://www.luxoft.com/excelian/",
+      "position": "Lead Software Engineer",
+      "startDate": "2019-09",
+      "endDate": "Present",
+      "summary": ""
     },
     {
-      "company": "Area 52",
-      "website": "https://area52.io/does-not-exist",
-      "position": "Head Code Ninja",
-      "startDate": "2013-09",
-      "summary": "Development team manager for [**Quantum Diorama**](https://en.wikipedia.org/wiki/Vaporware), a distributed molecular modeling and analysis suite for Linux and OS X.",
-      "highlights": [
-        "Managed a 5-person development team",
-        "Accomplishment 2",
-        "Etc."
-      ]
+      "position": "Senior Software Engineer",
+      "startDate": "2019-04",
+      "endDate": "2019-08",
+      "summary": ""
     },
     {
-      "company": "Veridian Dynamics",
-      "website": "https://en.wikipedia.org/wiki/Better_Off_Ted#Plot",
-      "position": "Principal Developer",
-      "startDate": "2011-07",
-      "endDate": "2013-08",
-      "summary": "Developer on numerous projects culminating in technical lead role for the [Jabberwocky project](http://betteroffted.wikia.com/wiki/Jabberwocky) and promotion to principal developer.",
-      "highlights": [
-        "Managed a 5-person development team",
-        "Accomplishment 2",
-        "Etc."
-      ]
+      "company": "",
+      "position": "Senior Software Engineer",
+      "startDate": "2018-10",
+      "endDate": "2019-03",
+      "summary": ""
     },
     {
-      "company": "Stark Industries",
-      "position": "IT Administrator",
-      "startDate": "2008-10",
-      "endDate": "2011-06",
-      "summary": "Junior programmer with heavy code responsibilities. Promoted to intermediate role after 6 months.",
-      "highlights": [
-        "Promoted to intermediate developer after 6 months",
-        "Accomplishment 2",
-        "Etc."
-      ]
+      "position": "Software Engineer",
+      "startDate": "2017-08",
+      "endDate": "2018-10",
+      "summary": ""
     },
     {
-      "company": "Dunder Mifflin",
-      "position": "Intern",
-      "startDate": "2008-06",
-      "endDate": "2008-09",
-      "summary": "Performed IT administration and deployments for Dunder Mifflin.",
-      "highlights": [
-        "Supervised roll-out of Dunder Mifflin Infinity website.",
-        "Performed mission-critical system backups and ",
-        "Etc."
-      ]
+      "company": "Empirica S.A.",
+      "website": "https://empirica.io",
+      "position": "Software Engineer / Product Owner",
+      "startDate": "2015-07",
+      "endDate": "2017-08",
+      "summary": ""
     }
   ],
   "education": [

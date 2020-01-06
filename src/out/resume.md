@@ -2,9 +2,9 @@ Wojciech Zankowski
 ============
 Email: wojciech(@at)zankowski.pl
 
-Web: https://www.zankowski.pl
+Web: http://www.zankowski.pl
 
-**Imaginary full-stack software developer with 6+ years industry experience** specializing in cloud-driven web applications and middleware. A native of southern CA, Jane enjoys hiking, mystery novels, and the company of Rufus, her two year old beagle.
+**Self-driven, passionate and committed software engineer specializing in market trading and asset management discipline.** Flexible with languages, tools and everything that leads to good solution. Enjoying his life in beautiful area of Zürich.
 
 ## SKILLS
 
@@ -15,40 +15,25 @@ Web: https://www.zankowski.pl
 
 ## EMPLOYMENT
 
-### *Head Code Ninja*, [Area 52](https://area52.io/does-not-exist) (2013-09 — Present)
+### *Lead Software Engineer*, [Excelian | Luxoft Financial Services](https://www.luxoft.com/excelian/) (2019-09 — Present)
 
-Development team manager for [**Quantum Diorama**](https://en.wikipedia.org/wiki/Vaporware), a distributed molecular modeling and analysis suite for Linux and OS X.
-  - Managed a 5-person development team
-  - Accomplishment 2
-  - Etc.
 
-### *Head Code Ninja*, [Area 52](https://area52.io/does-not-exist) (2013-09 — Present)
 
-Development team manager for [**Quantum Diorama**](https://en.wikipedia.org/wiki/Vaporware), a distributed molecular modeling and analysis suite for Linux and OS X.
-  - Managed a 5-person development team
-  - Accomplishment 2
-  - Etc.
+### *Senior Software Engineer*,  (2019-04 — 2019-08)
 
-### *Principal Developer*, [Veridian Dynamics](https://en.wikipedia.org/wiki/Better_Off_Ted#Plot) (2011-07 — 2013-08)
 
-Developer on numerous projects culminating in technical lead role for the [Jabberwocky project](http://betteroffted.wikia.com/wiki/Jabberwocky) and promotion to principal developer.
-  - Managed a 5-person development team
-  - Accomplishment 2
-  - Etc.
 
-### *IT Administrator*, Stark Industries (2008-10 — 2011-06)
+### *Senior Software Engineer*,  (2018-10 — 2019-03)
 
-Junior programmer with heavy code responsibilities. Promoted to intermediate role after 6 months.
-  - Promoted to intermediate developer after 6 months
-  - Accomplishment 2
-  - Etc.
 
-### *Intern*, Dunder Mifflin (2008-06 — 2008-09)
 
-Performed IT administration and deployments for Dunder Mifflin.
-  - Supervised roll-out of Dunder Mifflin Infinity website.
-  - Performed mission-critical system backups and 
-  - Etc.
+### *Software Engineer*,  (2017-08 — 2018-10)
+
+
+
+### *Software Engineer / Product Owner*, [Empirica S.A.](https://empirica.io) (2015-07 — 2017-08)
+
+
 
 
 ## PROJECTS

@@ -199,20 +199,29 @@ also doesn't render any content.
 -->}}
 
 {{#*inline "body-employment" }}
-<div>
-  <h3><em>{{ position }}</em>,
+        {{#if stack}}
+        <div class="stack-employment">
+          {{else}}
+          <div>
+            {{/if}}
+  <h3><em>{{ position }}{{#if employer}},{{/if}}</em>
     {{#if url }}
     <a href="{{{ url }}}">{{ employer }}</a>
     {{else}}
     {{ employer }}
     {{/if}}
     </h3>
-    <span class="tenure">{{dateRange .}}</span>
+    <span class="tenure">{{dateRange .}}</span> |
+    <span class="tenure">{{location}}</span>
     {{#if keywords}}
-    {{#if start}}| {{/if}}<span class="keywords">{{#each keywords}}{{{ . }}} {{/each}}</span>
+    {{#if start}}| {{/if}}<span class="keywords">{{#each keywords}}{{{ . }}}, {{/each}}</span>
     {{/if}}
+  {{#if projects}}
+  {{#each projects}}
   <p>{{{ summary }}}</p>
   {{> highlights }}
+  {{/each}}
+  {{/if}}
 </div>
 {{/inline}}
 
