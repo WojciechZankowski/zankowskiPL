@@ -10,7 +10,7 @@
     "other": []
   },
   "info": {
-    "brief": "**Self-driven, passionate and committed software engineer specializing in market trading and asset management discipline.** Flexible with languages, tools and everything that leads to good solution. Enjoying his life in beautiful area of Zürich."
+    "brief": "**Self-driven, passionate and committed software engineer specializing in market trading and asset management discipline.** Flexible with languages, tools and everything that leads to good solution. Enjoying his life in the beautiful area of Zürich."
   },
   "projects": [
     {
@@ -52,6 +52,15 @@
         "start": "2019-09",
         "end": "Present",
         "location": "Zürich, Switzerland",
+        "keywords": [
+          "Java SE 6",
+          "Google Guice",
+          "Google Guava",
+          "Oracle DB",
+          "Angular 4+",
+          "Typescript",
+          "D3.js"
+        ],
         "stack": "true"
       },
       {
@@ -77,15 +86,6 @@
         "start": "2017-08",
         "end": "2018-10",
         "location": "Wroclaw, Poland",
-        "keywords": [
-          "Java SE 6",
-          "Google Guice",
-          "Google Guava",
-          "Oracle DB",
-          "Angular 4+",
-          "Typescript",
-          "D3.js"
-        ],
         "projects": [
           {
             "summary": "Robo Advisory Platform",

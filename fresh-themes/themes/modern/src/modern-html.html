@@ -325,6 +325,29 @@ also doesn't render any content.
   resume, using the same inline template technique.
 --> }}
 
+
+{{#section "languages"}}
+<hr>
+<section id="languages">
+  <header>
+    <h2>{{{sectionTitle "Languages"}}}</h2>
+  </header>
+  <span class="fa fa-lg fa-language"></span>
+
+  {{#each r.languages}}
+  <div class="languages">
+    <h3><em>{{{ language }}}</em></h3>
+    {{{ level }}}
+  </div>
+  {{/each}}
+</section>
+{{/section}}
+
+{{! <!--
+  We'll override all section heading icons the same way, for the rest of the
+  resume, using the same inline template technique.
+--> }}
+
 {{#*inline "icon-service"}}<span class="fa fa-lg fa-child"></span>{{/inline}}
 {{#*inline "icon-extracurricular"}}<span class="fa fa-lg fa-child"></span>{{/inline}}
 {{#*inline "icon-affiliation"}}<span class="fa fa-lg fa-share-alt"></span>{{/inline}}

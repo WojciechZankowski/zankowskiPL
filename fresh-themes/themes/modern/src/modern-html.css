@@ -259,3 +259,7 @@ a:hover {
 .stack-employment {
     margin-bottom: 0px;
 }
+
+.languages {
+    display: block
+}

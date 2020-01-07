@@ -4,7 +4,7 @@ Email: wojciech(@at)zankowski.pl
 
 Web: http://www.zankowski.pl
 
-**Self-driven, passionate and committed software engineer specializing in market trading and asset management discipline.** Flexible with languages, tools and everything that leads to good solution. Enjoying his life in beautiful area of Zürich.
+**Self-driven, passionate and committed software engineer specializing in market trading and asset management discipline.** Flexible with languages, tools and everything that leads to good solution. Enjoying his life in the beautiful area of Zürich.
 
 ## SKILLS
 
