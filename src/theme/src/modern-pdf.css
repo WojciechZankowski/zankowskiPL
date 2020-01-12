@@ -14,10 +14,10 @@ main {
 }
 
 body {
-  font-size: 15px;
+  font-size: 12px;
   color: #333;
   line-height: 1.42857143;
-  background-color: #F0F0F0;
+  background-color: #FFFFFF;
   margin: 0;
   padding: 0;
   font-family: {{{fontList 'default'}}};
@@ -34,7 +34,6 @@ the PDF case, <main> for the HTML case, and style both via an ID. */
   background-color: #FFF;
   margin: 10px;
   padding: 10px;
-  border: 1px solid #E6E6E6;
 }
 
 body.pdf > #main {
@@ -42,7 +41,7 @@ body.pdf > #main {
 }
 
 #container > header {
-  padding-top: 6em;
+  padding-top: 1em;
   padding-bottom: 1em;
 }
 
@@ -67,12 +66,12 @@ span.fa
   top: 37px;
   transform: translateY(-50%);
   left: -100px;
-  color: #1a4367;
+  color: #9a7000;
 }
 
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 16px;
+  margin-bottom: 16px;
   border: 0;
   border-top: 1px solid #EEE;
 }
@@ -89,7 +88,7 @@ h1 {
 
 h2 {
   font-size: 30px;
-  color: #4376a2;
+  color: #bf9000;
   text-transform: uppercase;
   font-weight: normal;
   padding-top: 20px;
@@ -102,7 +101,7 @@ h3 {
 }
 
 a, a:visited {
-  color: #428BCA;
+  color: #bf9000;
   text-decoration: none;
   font-weight: bold;
 }
@@ -147,11 +146,11 @@ a:hover {
 
 .label-keyword {
   display: inline-block;
-  background: #e8f4ff;
+
   color: black;
   font-size: 0.9em;
   padding: 5px;
-  border: 1px solid #357ebd;
+  border: 1px solid #bf9000;
   border-radius: 5px;
   margin-top: 2px;
   font-weight: bold;
@@ -254,4 +253,21 @@ a:hover {
 
 .res-label {
   font-style: italic;
+}
+
+.stack-employment {
+    margin-bottom: 0px;
+}
+
+.languages {
+    display: inline-block
+}
+
+.languages-padding {
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
+
+.fill-box {
+    padding-bottom: 120px;
 }

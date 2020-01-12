@@ -1,3 +1,9 @@
+{{!
+
+  Templatized CSS file for the Modern theme. Expanded by Handlebars during
+  resume generation.
+
+}}
 
 * {
   box-sizing: border-box;
@@ -11,10 +17,10 @@ body {
   font-size: 15px;
   color: #333;
   line-height: 1.42857143;
-  background-color: #F0F0F0;
+  background-color: #FFFFFF;
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Calibri', 'sans-serif';
+  font-family: {{{fontList 'default'}}};
 }
 
 /* Typical page borders are awkward when rendered to PDF. */
@@ -28,7 +34,6 @@ the PDF case, <main> for the HTML case, and style both via an ID. */
   background-color: #FFF;
   margin: 10px;
   padding: 10px;
-  border: 1px solid #E6E6E6;
 }
 
 body.pdf > #main {
@@ -256,4 +261,12 @@ a:hover {
 
 .languages {
     display: block
+}
+
+.languages-padding {
+    padding-bottom: 20px;
+}
+
+.download-links {
+	background-color: rgba(245, 245, 245, 0.9);
 }

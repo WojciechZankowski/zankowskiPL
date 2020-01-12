@@ -7,6 +7,7 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic'
         rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <style>
             * {
               box-sizing: border-box;
@@ -20,7 +21,7 @@
               font-size: 15px;
               color: #333;
               line-height: 1.42857143;
-              background-color: #F0F0F0;
+              background-color: #FFFFFF;
               margin: 0;
               padding: 0;
               font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Calibri', 'sans-serif';
@@ -37,7 +38,6 @@
               background-color: #FFF;
               margin: 10px;
               padding: 10px;
-              border: 1px solid #E6E6E6;
             }
             
             body.pdf > #main {
@@ -266,18 +266,49 @@
             .languages {
                 display: block
             }
+            
+            .languages-padding {
+                padding-bottom: 20px;
+            }
+            
+            .download-links {
+            	background-color: rgba(245, 245, 245, 0.9);
+            }
         </style>
     </head>
     
     <body>
         <main id="main">
             <div id="container">
+                <div class="fixed-top d-flex justify-content-center m-1">
+                    <div class="download-links border border-1 border-info rounded">
+                        <div class="mr-2 text-center small"> <a class="mr-1" href="resumes/resume.pdf" download="resume.pdf" title="Download the PDF version">
+
+					<span class="fa-stack" aria-hidden="true">
+
+						<i class="fa fa-file-pdf-o fa-stack-1x"></i>
+
+					</span> pdf
+
+                    </a> <a href="resumes/resume.html" download="resume.html"
+                            title="Download the HTML version">
+
+					<span class="fa-stack" aria-hidden="true">
+
+						<i class="fa fa-code fa-stack-1x"></i>
+
+					</span> html
+
+                    </a>
+                        </div>
+                    </div>
+                </div>
                 <header>
                      <h1>Wojciech Zankowski</h1>
                     <div id="contact">
                         <div class="email"><a href="mailto:wojciech(@at)zankowski.pl">wojciech(@at)zankowski.pl</a>
                         </div>
-                        <div class="website"><a href="http://www.zankowski.pl">http://www.zankowski.pl</a>
+                        <div class="website"><a href="https://www.zankowski.pl">https://www.zankowski.pl</a>
                         </div>
                     </div>
                 </header>
@@ -402,9 +433,9 @@
                     <div class="stack-employment">
                          <h3><em>Lead Software Engineer,</em>
 
-    <a href="https://www.luxoft.com/excelian/">Excelian | Luxoft Financial Services</a>
+                                <a href="https://www.luxoft.com/excelian/">Excelian | Luxoft Financial Services</a>
 
-    </h3> <span class="tenure">2019-09 — Present</span> | <span class="tenure">Zürich, Switzerland</span>|
+                            </h3> <span class="tenure">2019-09 — Present</span> | <span class="tenure">Zürich, Switzerland</span>|
                         <span
                         class="keywords">Java SE 6, Google Guice, Google Guava, Oracle DB, Angular 4+, Typescript,
                             D3.js,</span>
@@ -412,23 +443,23 @@
                     <div class="stack-employment">
                          <h3><em>Senior Software Engineer</em>
 
-    
+                                
 
-    </h3> <span class="tenure">2019-04 — 2019-08</span> | <span class="tenure">Zürich, Switzerland</span>
+                            </h3> <span class="tenure">2019-04 — 2019-08</span> | <span class="tenure">Zürich, Switzerland</span>
                     </div>
                     <div class="stack-employment">
                          <h3><em>Senior Software Engineer</em>
 
-    
+                                
 
-    </h3> <span class="tenure">2018-10 — 2019-03</span> | <span class="tenure">Wroclaw, Poland</span>
+                            </h3> <span class="tenure">2018-10 — 2019-03</span> | <span class="tenure">Wroclaw, Poland</span>
                     </div>
                     <div>
                          <h3><em>Software Engineer</em>
 
-    
+                                
 
-    </h3> <span class="tenure">2017-08 — 2018-10</span> | <span class="tenure">Wroclaw, Poland</span>
+                            </h3> <span class="tenure">2017-08 — 2018-10</span> | <span class="tenure">Wroclaw, Poland</span>
                         <p>
                             <p>Robo Advisory Platform</p>
                         </p>
@@ -447,9 +478,9 @@
                     <div>
                          <h3><em>Software Engineer / Product Owner,</em>
 
-    <a href="https://empirica.io">Empirica S.A.</a>
+                                <a href="https://empirica.io">Empirica S.A.</a>
 
-    </h3> <span class="tenure">2015-07 — 2017-08</span> | <span class="tenure">Wroclaw, Poland</span>|
+                            </h3> <span class="tenure">2015-07 — 2017-08</span> | <span class="tenure">Wroclaw, Poland</span>|
                         <span
                         class="keywords">Java SE 8, Java SE 6, FIX 4.2/5.0 Protocol, Spring Framework, SOAP Web
                             Services, JMX, MySQL, Chronicle, Maven, Hudson, Eclipse, Eclipse MAT, VisualVM,
@@ -487,13 +518,11 @@
 
                     </header>
                     <div>
-                        
-<h3>
+                         <h3>
 
-<a href="https://github.com/WojciechZankowski/iextrading4j">IEXTrading4j</a>
+                                <a href="https://github.com/WojciechZankowski/iextrading4j">IEXTrading4j</a>
 
-</h3>
-<span class="tenure">2017-03 — Present</span>
+                            </h3> <span class="tenure">2017-03 — Present</span>
                         <p>IEX Trading allows to receive market and financial data. Their data can
                             be accessed in real-time during market session, can be downloaded as recorded
                             sessions in PCAP files or can be accessed by bunch of different API-s.
@@ -501,13 +530,11 @@
                             REST, SSE or Websocket services.</p>
                     </div>
                     <div>
-                        
-<h3>
+                         <h3>
 
-<a href="https://github.com/OpenBlazar/blazar-fix-parser">FIX Parser</a>
+                                <a href="https://github.com/OpenBlazar/blazar-fix-parser">FIX Parser</a>
 
-</h3>
-<span class="tenure">2016-03 — Present</span>
+                            </h3> <span class="tenure">2016-03 — Present</span>
                         <p>Ultimate tool for FIX developers and testers. It allows to upload your
                             custom FIX dictionaries and make your daily work much easier with better
                             field definition, compare FIX messages to find differences in fields values
@@ -521,13 +548,11 @@
 
                     </header>
                     <div>
-                        
-<h3><em>Bachelor of Science in Systems Engineering</em>,
+                         <h3><em>Bachelor of Science in Systems Engineering</em>,
 
-<a href="https://pwr.edu.pl/en/">Wroclaw University of Science and Technology</a>
+                                <a href="https://pwr.edu.pl/en/">Wroclaw University of Science and Technology</a>
 
-</h3>
-<span class="tenure">2012-10 — 2016-01</span>
+                            </h3> <span class="tenure">2012-10 — 2016-01</span>
                         <p>Faculty is teaching how to use the information tools, including writing
                             simple programs, desiging data bases and active use of the Internet resources.
                             The studies program involves elements of microeconomy, secrets of managing
@@ -542,14 +567,16 @@
                     <header>
                          <h2>Languages</h2>
                     </header> <span class="fa fa-lg fa-language"></span>
-                    <div class="languages">
-                         <h3><em>English</em></h3>Fluent</div>
-                    <div class="languages">
-                         <h3><em>Spanish</em></h3>Fluent</div>
-                    <div class="languages">
-                         <h3><em>German</em></h3>Basic</div>
-                    <div class="languages">
-                         <h3><em>Polish</em></h3>Native</div>
+                    <div class="row">
+                        <div class="languages col-md-6 languages-padding">
+                             <h3><em>English</em></h3>Fluent</div>
+                        <div class="languages col-md-6 languages-padding">
+                             <h3><em>Spanish</em></h3>Fluent</div>
+                        <div class="languages col-md-6 languages-padding">
+                             <h3><em>German</em></h3>Basic</div>
+                        <div class="languages col-md-6 languages-padding">
+                             <h3><em>Polish</em></h3>Native</div>
+                    </div>
                 </section>
                 <hr>
                 <section id="testimonials">
@@ -568,30 +595,52 @@
                 </section>
                 <hr>
                 <section id="interests">
-                    <header> <span class="fa fa-lg fa-bicycle"></span> 
-                         <h2>interests</h2>
-
-                    </header>
-                    <div>
-                         <h3><em>Sports</em></h3>
- <span class="tenure">Current</span>
-
-                        <p>Football (Soccer), Squash, Tennis</p>
-                    </div>
-                    <div>
-                         <h3><em>Puzzle</em></h3>
- <span class="tenure">Current</span>
-
-                        <p>Rubik&#39;s Cube, Sudoku</p>
-                    </div>
-                    <div>
-                         <h3><em>Cars</em></h3>
- <span class="tenure">Current</span>
-
+                    <header>
+                         <h2>Interests</h2>
+                    </header> <span class="fa fa-lg fa-bicycle"></span>
+                    <div class="row">
+                        <div class="col-md-6 languages-padding">
+                             <h3><em>Sports</em></h3>
+                            <p>Football (Soccer), Squash, Tennis</p>
+                        </div>
+                        <div class="col-md-6 languages-padding">
+                             <h3><em>Puzzle</em></h3>
+                            <p>Rubik&#39;s Cube, Sudoku</p>
+                        </div>
+                        <div class="col-md-6 languages-padding">
+                             <h3><em>Cars</em></h3>
+                        </div>
                     </div>
                 </section>
+                <!-- <hr>
+<section id="interests">
+    <header>
+      <span class="fa fa-lg fa-bicycle"></span>  <h2>interests</h2>
+    </header>
+    <div>
+    <h3><em>Sports</em></h3>
+    <span class="tenure">Current</span>
+    <p>Football (Soccer), Squash, Tennis</p>
+
+    </div>
+    <div>
+    <h3><em>Puzzle</em></h3>
+    <span class="tenure">Current</span>
+    <p>Rubik&#39;s Cube, Sudoku</p>
+
+    </div>
+    <div>
+    <h3><em>Cars</em></h3>
+    <span class="tenure">Current</span>
+    
+    </div>
+</section>
+-->
             </div>
         </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     </body>
 
 </html>

@@ -8,7 +8,7 @@
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 
     <style>
 * {
@@ -20,10 +20,10 @@ main {
 }
 
 body {
-  font-size: 15px;
+  font-size: 12px;
   color: #333;
   line-height: 1.42857143;
-  background-color: #F0F0F0;
+  background-color: #FFFFFF;
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Calibri', 'sans-serif';
@@ -40,7 +40,6 @@ the PDF case, <main> for the HTML case, and style both via an ID. */
   background-color: #FFF;
   margin: 10px;
   padding: 10px;
-  border: 1px solid #E6E6E6;
 }
 
 body.pdf > #main {
@@ -48,7 +47,7 @@ body.pdf > #main {
 }
 
 #container > header {
-  padding-top: 6em;
+  padding-top: 1em;
   padding-bottom: 1em;
 }
 
@@ -73,12 +72,12 @@ span.fa
   top: 37px;
   transform: translateY(-50%);
   left: -100px;
-  color: #1a4367;
+  color: #9a7000;
 }
 
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 16px;
+  margin-bottom: 16px;
   border: 0;
   border-top: 1px solid #EEE;
 }
@@ -95,7 +94,7 @@ h1 {
 
 h2 {
   font-size: 30px;
-  color: #4376a2;
+  color: #bf9000;
   text-transform: uppercase;
   font-weight: normal;
   padding-top: 20px;
@@ -108,7 +107,7 @@ h3 {
 }
 
 a, a:visited {
-  color: #428BCA;
+  color: #bf9000;
   text-decoration: none;
   font-weight: bold;
 }
@@ -153,11 +152,11 @@ a:hover {
 
 .label-keyword {
   display: inline-block;
-  background: #e8f4ff;
+
   color: black;
   font-size: 0.9em;
   padding: 5px;
-  border: 1px solid #357ebd;
+  border: 1px solid #bf9000;
   border-radius: 5px;
   margin-top: 2px;
   font-weight: bold;
@@ -261,6 +260,23 @@ a:hover {
 .res-label {
   font-style: italic;
 }
+
+.stack-employment {
+    margin-bottom: 0px;
+}
+
+.languages {
+    display: inline-block
+}
+
+.languages-padding {
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
+
+.fill-box {
+    padding-bottom: 120px;
+}
 </style>
 
 
@@ -278,7 +294,7 @@ a:hover {
         <div id="contact">
           <div class="email"><a href="mailto:wojciech(@at)zankowski.pl">wojciech(@at)zankowski.pl</a></div>
           
-          <div class="website"><a href="http://www.zankowski.pl">http://www.zankowski.pl</a></div>
+          <div class="website"><a href="https://www.zankowski.pl">https://www.zankowski.pl</a></div>
         </div>
       </header>
 
@@ -451,42 +467,74 @@ a:hover {
       <span class="fa fa-lg fa-building"></span>  <h2>employment</h2>
     </header>
 
-<div>
-  <h3><em>Lead Software Engineer</em>,
+        <div class="stack-employment">
+  <h3><em>Lead Software Engineer,</em>
     <a href="https://www.luxoft.com/excelian/">Excelian | Luxoft Financial Services</a>
     </h3>
-    <span class="tenure">2019-09 — Present</span>
-    | <span class="keywords">Java SE 6 Google Guice Google Guava Oracle DB Angular 4+ Typescript D3.js </span>
-  <p></p>
+    <span class="tenure">2019-09 — Present</span> |
+    <span class="tenure">Zürich, Switzerland</span>
+    | <span class="keywords">Java SE 6, Google Guice, Google Guava, Oracle DB, Angular 4+, Typescript, D3.js, </span>
 </div>
-<div>
-  <h3><em>Senior Software Engineer</em>,
+        <div class="stack-employment">
+  <h3><em>Senior Software Engineer</em>
     
     </h3>
-    <span class="tenure">2019-04 — 2019-08</span>
-  <p></p>
+    <span class="tenure">2019-04 — 2019-08</span> |
+    <span class="tenure">Zürich, Switzerland</span>
 </div>
-<div>
-  <h3><em>Senior Software Engineer</em>,
+        <div class="stack-employment">
+  <h3><em>Senior Software Engineer</em>
     
     </h3>
-    <span class="tenure">2018-10 — 2019-03</span>
-  <p></p>
+    <span class="tenure">2018-10 — 2019-03</span> |
+    <span class="tenure">Wroclaw, Poland</span>
 </div>
-<div>
-  <h3><em>Software Engineer</em>,
+          <div>
+  <h3><em>Software Engineer</em>
     
     </h3>
-    <span class="tenure">2017-08 — 2018-10</span>
-  <p></p>
+    <span class="tenure">2017-08 — 2018-10</span> |
+    <span class="tenure">Wroclaw, Poland</span>
+  <p><p>Robo Advisory Platform</p>
+</p>
+  <ul>
+    <li>Driving, leading and maintaining project constantly</li>
+    <li>Taking part in system architecture and planning integrations with external systems</li>
+    <li>Integration and development of portfolio rebalancing and risk analysis engines</li>
+    <li>Caching framework development</li>
+    <li>UI development using Angular 6, Typescript and D3 technologies</li>
+    <li>Constantly raising code base quality by actively done code reviews</li>
+    <li>Integration tests development</li>
+  </ul>
 </div>
-<div>
-  <h3><em>Software Engineer / Product Owner</em>,
+          <div>
+  <h3><em>Software Engineer / Product Owner,</em>
     <a href="https://empirica.io">Empirica S.A.</a>
     </h3>
-    <span class="tenure">2015-07 — 2017-08</span>
-    | <span class="keywords">Java SE 8 Java SE 6 FIX 4.2/5.0 Protocol Spring Framework SOAP Web Services JMX MySQL Chronicle Maven Hudson Eclipse Eclipse MAT VisualVM JConsole Hibernate REST Services IDEA Intellij AngularJS NodeJS </span>
-  <p></p>
+    <span class="tenure">2015-07 — 2017-08</span> |
+    <span class="tenure">Wroclaw, Poland</span>
+    | <span class="keywords">Java SE 8, Java SE 6, FIX 4.2/5.0 Protocol, Spring Framework, SOAP Web Services, JMX, MySQL, Chronicle, Maven, Hudson, Eclipse, Eclipse MAT, VisualVM, JConsole, Hibernate, REST Services, IDEA Intellij, AngularJS, NodeJS, </span>
+  <p><p>Robo Advisory Platform</p>
+</p>
+  <ul>
+    <li>Taking part in system architecture and planning integrations with external systems</li>
+    <li>Implementation of portfolio rebalancing logic</li>
+    <li>Building REST and Web Socket services</li>
+    <li>Defining specification for Robo-Advisory platform</li>
+    <li>Leading project and determining requirements for development team</li>
+    <li>Contact with clients and taking part in client meetings</li>
+    <li>Leading Scrum ceremonies: backlog refinement, sprint planning</li>
+  </ul>
+  <p><p>Algorithmic Trading Platform</p>
+</p>
+  <ul>
+    <li>Trading strategies implementation for market makers</li>
+    <li>FIX Brokers integration, e.g. Interactive Brokers</li>
+    <li>Market Data Feeds integration, e.g. Oanda, Interactive Brokers</li>
+    <li>Backtest platform development</li>
+    <li>System maintenance</li>
+    <li>Leading project and determining requirements for development team</li>
+  </ul>
 </div>
 </section>
 
@@ -549,6 +597,70 @@ a:hover {
 
 
 
+          <div class="fill-box"></div>
+          <hr>
+          <section id="languages">
+            <header>
+              <h2>Languages</h2>
+            </header>
+            <span class="fa fa-lg fa-language"></span>
+
+            <div class="row languages">
+              <div class="col-md-6 languages-padding">
+                <h3><em>English</em></h3>
+                Fluent
+              </div>
+              <div class="col-md-6 languages-padding">
+                <h3><em>Spanish</em></h3>
+                Fluent
+              </div>
+              <div class="col-md-6 languages-padding">
+                <h3><em>German</em></h3>
+                Basic
+              </div>
+              <div class="col-md-6 languages-padding">
+                <h3><em>Polish</em></h3>
+                Native
+              </div>
+            </div>
+          </section>
+
+
+          <hr>
+          <section id="testimonials">
+              <header>
+                <span class="fa fa-lg fa-quote-left"></span>  <h2>testimonials</h2>
+              </header>
+              <div>
+              <h3><em>Patryk Stopyra - Software Developer @ UBS</em></h3>
+              <p>What is most characteristic for him - it&#39;s his engagement. When he obtains a problem to be solved - he focuses on it, gets 100% involved into the subject and does not give up until he comes out with an accurate solution. And he is usually extremely efficient with this.</p>
+              </div>
+          </section>
+
+          <hr>
+          <section id="interests">
+            <header>
+              <h2>Interests</h2>
+            </header>
+
+            <span class="fa fa-lg fa-bicycle"></span>
+            <div class="row">
+              <div class="col-md-6 languages-padding">
+                <h3><em>Sports</em></h3>
+                <p>Football (Soccer), Squash, Tennis</p>
+
+              </div>
+              <div class="col-md-6 languages-padding">
+                <h3><em>Puzzle</em></h3>
+                <p>Rubik&#39;s Cube, Sudoku</p>
+
+              </div>
+              <div class="col-md-6 languages-padding">
+                <h3><em>Cars</em></h3>
+                
+              </div>
+            </div>
+          </section>
 
 
 
@@ -560,39 +672,9 @@ a:hover {
 
 
 
-<hr>
-<section id="testimonials">
-    <header>
-      <span class="fa fa-lg fa-quote-left"></span>  <h2>testimonials</h2>
-    </header>
-    <div>
-    <h3><em>Patryk Stopyra - Software Developer @ UBS</em></h3>
-    <p>What is most characteristic for him - it&#39;s his engagement. When he obtains a problem to be solved - he focuses on it, gets 100% involved into the subject and does not give up until he comes out with an accurate solution. And he is usually extremely efficient with this.</p>
-    </div>
-</section>
-<hr>
-<section id="interests">
-    <header>
-      <span class="fa fa-lg fa-bicycle"></span>  <h2>interests</h2>
-    </header>
-    <div>
-    <h3><em>Sports</em></h3>
-    <span class="tenure">Current</span>
-    <p>Football (Soccer), Squash, Tennis</p>
 
-    </div>
-    <div>
-    <h3><em>Puzzle</em></h3>
-    <span class="tenure">Current</span>
-    <p>Rubik&#39;s Cube, Sudoku</p>
 
-    </div>
-    <div>
-    <h3><em>Cars</em></h3>
-    <span class="tenure">Current</span>
-    
-    </div>
-</section>
+
 
       </div>
     </main>

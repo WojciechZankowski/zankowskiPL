@@ -38,7 +38,7 @@
     {{!<!-- TODO: Optimize Google Fonts and Font Awesome access. -->}}
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     {{! <!--
       Link in the resume's stylesheet. We could use a <link> tag here as above,
       or dump the styles into <style></style>, but there's a handy helper
@@ -199,20 +199,29 @@ also doesn't render any content.
 -->}}
 
 {{#*inline "body-employment" }}
-<div>
-  <h3><em>{{ position }}</em>,
+        {{#if stack}}
+        <div class="stack-employment">
+          {{else}}
+          <div>
+            {{/if}}
+  <h3><em>{{ position }}{{#if employer}},{{/if}}</em>
     {{#if url }}
     <a href="{{{ url }}}">{{ employer }}</a>
     {{else}}
     {{ employer }}
     {{/if}}
     </h3>
-    <span class="tenure">{{dateRange .}}</span>
+    <span class="tenure">{{dateRange .}}</span> |
+    <span class="tenure">{{location}}</span>
     {{#if keywords}}
-    {{#if start}}| {{/if}}<span class="keywords">{{#each keywords}}{{{ . }}} {{/each}}</span>
+    {{#if start}}| {{/if}}<span class="keywords">{{#each keywords}}{{{ . }}}, {{/each}}</span>
     {{/if}}
+  {{#if projects}}
+  {{#each projects}}
   <p>{{{ summary }}}</p>
   {{> highlights }}
+  {{/each}}
+  {{/if}}
 </div>
 {{/inline}}
 
@@ -316,6 +325,69 @@ also doesn't render any content.
   resume, using the same inline template technique.
 --> }}
 
+
+
+          {{#section "languages"}}
+          <div class="fill-box"></div>
+          <hr>
+          <section id="languages">
+            <header>
+              <h2>{{{sectionTitle "Languages"}}}</h2>
+            </header>
+            <span class="fa fa-lg fa-language"></span>
+
+            <div class="row languages">
+              {{#each r.languages}}
+              <div class="col-md-6 languages-padding">
+                <h3><em>{{{ language }}}</em></h3>
+                {{{ level }}}
+              </div>
+              {{/each}}
+            </div>
+          </section>
+          {{/section}}
+
+          {{! <!--
+  We'll override all section heading icons the same way, for the rest of the
+  resume, using the same inline template technique.
+--> }}
+
+          {{> section/service _icon="icon-service"}}
+          {{> section/extracurricular _icon="icon-extracurricular"}}
+          {{> section/affiliation _icon="icon-affiliation"}}
+          {{> section/samples _icon="icon-samples"}}
+          {{> section/writing _icon="icon-writing"}}
+          {{> section/reading _icon="icon-reading"}}
+          {{> section/recognition _icon="icon-recognition"}}
+          {{> section/speaking _icon="icon-speaking"}}
+          {{> section/testimonials _icon="icon-testimonials"}}
+          {{> section/references _icon="icon-references"}}
+
+          {{#section "interests"}}
+          <hr>
+          <section id="interests">
+            <header>
+              <h2>{{{sectionTitle "Interests"}}}</h2>
+            </header>
+
+            <span class="fa fa-lg fa-bicycle"></span>
+            <div class="row">
+              {{#each r.interests}}
+              <div class="col-md-6 languages-padding">
+                <h3><em>{{{ name }}}</em></h3>
+                {{{ summary }}}
+                {{> highlights }}
+              </div>
+              {{/each}}
+            </div>
+          </section>
+          {{/section}}
+
+{{! <!--
+  We'll override all section heading icons the same way, for the rest of the
+  resume, using the same inline template technique.
+--> }}
+
 {{#*inline "icon-service"}}<span class="fa fa-lg fa-child"></span>{{/inline}}
 {{#*inline "icon-extracurricular"}}<span class="fa fa-lg fa-child"></span>{{/inline}}
 {{#*inline "icon-affiliation"}}<span class="fa fa-lg fa-share-alt"></span>{{/inline}}
@@ -332,18 +404,6 @@ also doesn't render any content.
   And we're done with the customizations. For the rest of the resume, we'll
   use the default section partials and style them with whatever CSS we like.
 --> }}
-
-{{> section/service _icon="icon-service"}}
-{{> section/extracurricular _icon="icon-extracurricular"}}
-{{> section/affiliation _icon="icon-affiliation"}}
-{{> section/samples _icon="icon-samples"}}
-{{> section/writing _icon="icon-writing"}}
-{{> section/reading _icon="icon-reading"}}
-{{> section/recognition _icon="icon-recognition"}}
-{{> section/speaking _icon="icon-speaking"}}
-{{> section/testimonials _icon="icon-testimonials"}}
-{{> section/references _icon="icon-references"}}
-{{> section/interests _icon="icon-interests"}}
 
       </div>
     </main>
