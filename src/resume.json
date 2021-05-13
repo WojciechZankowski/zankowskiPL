@@ -6,9 +6,15 @@
   },
   "contact": {
     "website": "https://www.zankowski.pl",
+    "github": "https://github.com/WojciechZankowski",
     "email": "wojciech(@at)zankowski.pl",
     "other": []
   },
+  "profiles": [{
+    "network": "GitHub",
+    "username": "john",
+    "url": "http://twitter.com/john"
+  }],
   "info": {
     "brief": "**Self-driven, passionate and committed software engineer specializing in market trading and asset management discipline.** Flexible with languages, tools and everything that leads to good solution. Enjoying his life in the beautiful area of Zürich."
   },
@@ -20,16 +26,6 @@
       "repo": "https://github.com/WojciechZankowski/iextrading4j",
       "url": "https://github.com/WojciechZankowski/iextrading4j",
       "summary": "IEX Trading allows to receive market and financial data. Their data can be accessed in real-time during market session, can be downloaded as recorded sessions in PCAP files or can be accessed by bunch of different API-s. Ecosystem of libraries allows to access each type of data from binary packets, REST, SSE or Websocket services.",
-      "keywords": [],
-      "media": []
-    },
-    {
-      "title": "FIX Parser",
-      "category": "Open Source",
-      "start": "2016-03",
-      "repo": "https://github.com/OpenBlazar/blazar-fix-parser",
-      "url": "https://github.com/OpenBlazar/blazar-fix-parser",
-      "summary": "Ultimate tool for FIX developers and testers. It allows to upload your custom FIX dictionaries and make your daily work much easier with better field definition, compare FIX messages to find differences in fields values or remember and browse messages parsed in the past.",
       "keywords": [],
       "media": []
     }
@@ -45,21 +41,25 @@
   "employment": {
     "history": [
       {
-        "employer": "Excelian | Luxoft Financial Services",
-        "url": "https://www.luxoft.com/excelian/",
+        "employer": "Credit Suisse AG",
+        "url": "https://www.credit-suisse.com/international/en/wealth-management.html",
         "position": "Lead Software Engineer",
         "summary": "",
         "start": "2019-09",
         "end": "Present",
         "location": "Zürich, Switzerland",
         "keywords": [
-          "Java SE 6",
+          "Java SE 8",
           "Google Guice",
           "Google Guava",
           "Oracle DB",
           "Angular 4+",
           "Typescript",
-          "D3.js"
+          "D3.js",
+          "AngularJS",
+          "Enterprise Architect",
+          "JProfiler",
+          "Splunk"
         ],
         "stack": "true"
       },
@@ -88,15 +88,14 @@
         "location": "Wroclaw, Poland",
         "projects": [
           {
-            "summary": "Robo Advisory Platform",
+            "summary": "International Wealth Management - Portfolio Solutions",
             "highlights": [
-              "Driving, leading and maintaining project constantly",
-              "Taking part in system architecture and planning integrations with external systems",
-              "Integration and development of portfolio rebalancing and risk analysis engines",
-              "Caching framework development",
-              "UI development using Angular 6, Typescript and D3 technologies",
-              "Constantly raising code base quality by actively done code reviews",
-              "Integration tests development"
+              "Technical Leadership for a team of 6 Full-Stack Developers, 2 Business Analysts and 1 QA tester",
+              "Technical leadership, designing & development of Client-ready Portfolio Opportunity generation project, Sustainable Investing initiative, Transaction Applicability project and tailored-made process for Premium Clients",
+              "Development and maintenance of suite of Portfolio Solutions applications in Private Banking - 360° Advisory Process, BookBuilder and Portfolio Advisory & Monitoring",
+              "Leading Neue Aargauer Bank migration",
+              "Introducing integration test framework with usage of WireMock",
+              "Development and maintenance of client facing Robo-Advisory application in Private Banking - 360° Advisory Process. Building application from the scratch with all core functionalities like Client Information, Portfolio Analysis, Portfolio Optimization and Regulatory features."
             ]
           }
         ]
@@ -111,7 +110,6 @@
         "location": "Wroclaw, Poland",
         "keywords": [
           "Java SE 8",
-          "Java SE 6",
           "FIX 4.2/5.0 Protocol",
           "Spring Framework",
           "SOAP Web Services",
@@ -134,10 +132,10 @@
           {
             "summary": "Robo Advisory Platform",
             "highlights": [
+              "Defining specification for Robo-Advisory platform (Product Owner of the project)",
               "Taking part in system architecture and planning integrations with external systems",
               "Implementation of portfolio rebalancing logic",
               "Building REST and Web Socket services",
-              "Defining specification for Robo-Advisory platform",
               "Leading project and determining requirements for development team",
               "Contact with clients and taking part in client meetings",
               "Leading Scrum ceremonies: backlog refinement, sprint planning"
@@ -150,8 +148,7 @@
               "FIX Brokers integration, e.g. Interactive Brokers",
               "Market Data Feeds integration, e.g. Oanda, Interactive Brokers",
               "Backtest platform development",
-              "System maintenance",
-              "Leading project and determining requirements for development team"
+              "System maintenance"
             ]
           }
         ]
@@ -229,7 +226,12 @@
   },
   "testimonials": [
     {
-      "name": "Patryk Stopyra - Software Developer @ UBS",
+      "name": "Jakub Bączkiewicz - Senior Software QA @ Capgemini",
+      "flavor": "professional",
+      "quote": "Wojciech is a role model both in IT world and private life. He has outstanding knowledge regarding programming and software development and is a natural-born leader. He is passionate about what he is doing and always takes responsibility for his and he's team decisions. He has clear vision of the projects he's working in, persistently pursues his goals and makes impossible - possible. I strongly recommend him as your future coworker, teammate and leader."
+    },
+    {
+      "name": "Patryk Stopyra - Security Developer @ UBS",
       "flavor": "professional",
       "quote": "What is most characteristic for him - it's his engagement. When he obtains a problem to be solved - he focuses on it, gets 100% involved into the subject and does not give up until he comes out with an accurate solution. And he is usually extremely efficient with this."
     }
@@ -255,9 +257,10 @@
   "interests": [
     {
       "name": "Sports",
-      "summary": "Football (Soccer), Squash, Tennis",
+      "summary": "Football, Trail running, Squash, Tennis",
       "keywords": [
-        "Football (Soccer)",
+        "Football",
+        "Trail running",
         "Squash",
         "Tennis"
       ]
@@ -269,11 +272,6 @@
         "Rubik's cube",
         "Sudoku"
       ]
-    },
-    {
-      "name": "Cars",
-      "summary": "",
-      "keywords": []
     }
   ]
 }

@@ -254,14 +254,25 @@ a:hover {
 }
 
 .languages {
-    display: inline-block
+  display: inline-block;
 }
 
 .languages-padding {
-    padding-bottom: 20px;
-    padding-right: 10px;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  width: 22%;
+}
+
+.interests-padding {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  width: 40%;
 }
 
 .fill-box {
-    padding-bottom: 120px;
+    padding-bottom: 60px;
 }

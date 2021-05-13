@@ -92,6 +92,7 @@
         <div id="contact">
           {{#has 'contact.email'}}<div class="email"><a href="mailto:{{{ RAW.contact.email }}}">{{ RAW.contact.email }}</a></div>{{/has}}
           {{#has 'contact.phone'}}<div class="phone">{{ RAW.contact.phone }}</div>{{/has}}
+          {{#has 'contact.github'}}<div class="website"><a href="{{{ RAW.contact.github }}}">{{ RAW.contact.github }}</a></div>{{/has}}
           {{#has 'contact.website'}}<div class="website"><a href="{{{ RAW.contact.website }}}">{{ RAW.contact.website }}</a></div>{{/has}}
         </div>
       </header>
@@ -119,41 +120,6 @@
 
   TL;DR Always wrap your sections with the "section"!
 --> }}
-
-
-{{#section 'skills' }}
-<hr>
-<section id="skills">
-  <header>
-  <h2>{{{sectionTitle "Skills"}}}</h2>
-  </header>
-  <span class="fa fa-lg fa-code"></span>
-  <ul class="list-unstyled">
-    {{#each r.skills.sets}}
-      <li class="card card-nested card-skills">
-        <div class="skill-level" rel="tooltip" title="{{ level }}" data-placement="left">
-          <div class="skill-progress {{toLower level }}"></div>
-        </div>
-        <div class="skill-info">
-          <strong>{{ name }}</strong>
-          <div class="space-top labels">
-            {{#if skills}}
-              {{#each skills}}
-                <div class="label label-keyword">
-                  <span class="kw">{{ this }}</span>
-                  {{#ifHasSkill @root.r .}}
-                  <span class="notes">{{skillYears . }} years</span>
-                  {{/ifHasSkill}}
-                </div>
-              {{/each}}
-            {{/if}}
-          </div>
-        </div>
-      </li>
-    {{/each}}
-  </ul>
-</section>
-{{/section}}
 
 {{! <!--
 
@@ -242,6 +208,7 @@ also doesn't render any content.
 
 
 {{#*inline "body-projects" }}
+<div class="fill-box"></div>
 <div>
 <h3>{{#if role}}<em>{{camelCase role }}</em>,{{/if}}
 {{#if url}}
@@ -328,7 +295,6 @@ also doesn't render any content.
 
 
           {{#section "languages"}}
-          <div class="fill-box"></div>
           <hr>
           <section id="languages">
             <header>
@@ -373,7 +339,7 @@ also doesn't render any content.
             <span class="fa fa-lg fa-bicycle"></span>
             <div class="row">
               {{#each r.interests}}
-              <div class="col-md-6 languages-padding">
+              <div class="col-md-6 interests-padding">
                 <h3><em>{{{ name }}}</em></h3>
                 {{{ summary }}}
                 {{> highlights }}

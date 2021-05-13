@@ -128,6 +128,10 @@
                 {{#has 'contact.phone'}}
                 <div class="phone">{{ RAW.contact.phone }}</div>
                 {{/has}}
+                {{#has 'contact.github'}}
+                <div class="website"><a href="{{{ RAW.contact.github }}}">{{ RAW.contact.github
+                    }}</a></div>
+                {{/has}}
                 {{#has 'contact.website'}}
                 <div class="website"><a href="{{{ RAW.contact.website }}}">{{ RAW.contact.website
                     }}</a></div>
@@ -380,7 +384,7 @@ also doesn't render any content.
 
                 <div class="row">
                     {{#each r.languages}}
-                    <div class="languages col-md-6 languages-padding">
+                    <div class="col-md-3 languages-padding">
                         <h3><em>{{{ language }}}</em></h3>
                         {{{ level }}}
                     </div>
