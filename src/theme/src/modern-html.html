@@ -90,12 +90,12 @@
 						<i class="fa fa-file-pdf-o fa-stack-1x"></i>
 					</span> pdf
                     </a>
-                    <a href="resumes/resume.html" download="resume.html"
-                       title="Download the HTML version">
-					<span class="fa-stack" aria-hidden="true">
-						<i class="fa fa-code fa-stack-1x"></i>
-					</span> html
-                    </a>
+<!--                    <a href="resumes/resume.html" download="resume.html"-->
+<!--                       title="Download the HTML version">-->
+<!--					<span class="fa-stack" aria-hidden="true">-->
+<!--						<i class="fa fa-code fa-stack-1x"></i>-->
+<!--					</span> html-->
+<!--                    </a>-->
                 </div>
 
             </div>
@@ -129,11 +129,11 @@
                 <div class="phone">{{ RAW.contact.phone }}</div>
                 {{/has}}
                 {{#has 'contact.github'}}
-                <div class="website"><a href="{{{ RAW.contact.github }}}">{{ RAW.contact.github
+                <div class="website"><a href="{{{ RAW.contact.github }}}" target="_blank" rel="noopener noreferrer">{{ RAW.contact.github
                     }}</a></div>
                 {{/has}}
                 {{#has 'contact.website'}}
-                <div class="website"><a href="{{{ RAW.contact.website }}}">{{ RAW.contact.website
+                <div class="website"><a href="{{{ RAW.contact.website }}}" target="_blank" rel="noopener noreferrer">{{ RAW.contact.website
                     }}</a></div>
                 {{/has}}
             </div>
@@ -174,10 +174,10 @@
             <ul class="list-unstyled">
                 {{#each r.skills.sets}}
                 <li class="card card-nested card-skills">
-                    <div class="skill-level" rel="tooltip" title="{{ level }}"
-                         data-placement="left">
-                        <div class="skill-progress {{toLower level }}"></div>
-                    </div>
+<!--                    <div class="skill-level" rel="tooltip" title="{{ level }}"-->
+<!--                         data-placement="left">-->
+<!--                        <div class="skill-progress {{toLower level }}"></div>-->
+<!--                    </div>-->
                     <div class="skill-info">
                         <strong>{{ name }}</strong>
                         <div class="space-top labels">
@@ -250,17 +250,22 @@ also doesn't render any content.
                 {{/if}}
                 <h3><em>{{ position }}{{#if employer}},{{/if}}</em>
                     {{#if url }}
-                    <a href="{{{ url }}}">{{ employer }}</a>
+                    <a href="{{{ url }}}" target="_blank" rel="noopener noreferrer">{{ employer }}</a>
                     {{else}}
                     {{ employer }}
                     {{/if}}
                 </h3>
+
                 <span class="tenure">{{dateRange .}}</span> |
                 <span class="tenure">{{location}}</span>
+
+
                 {{#if keywords}}
-                {{#if start}}| {{/if}}<span
-                    class="keywords">{{#each keywords}}{{{ . }}}, {{/each}}</span>
+                <br><br>
+                <span
+                        class="keywords"><span style="font-weight: bold">Technology: </span> {{#each keywords}}{{{ . }}}, {{/each}}</span>
                 {{/if}}
+
                 {{#if projects}}
                 {{#each projects}}
                 <p>{{{ summary }}}</p>
@@ -290,7 +295,7 @@ also doesn't render any content.
             <div>
                 <h3>{{#if role}}<em>{{camelCase role }}</em>,{{/if}}
                     {{#if url}}
-                    <a href="{{{ url }}}">{{ title }}</a>
+                    <a href="{{{ url }}}" target="_blank" rel="noopener noreferrer">{{ title }}</a>
                     {{else}}
                     {{ title }}
                     {{/if}}
@@ -309,6 +314,41 @@ also doesn't render any content.
 
             {{> section/projects _icon="icon-projects"}}
 
+
+
+            {{! <!--
+  Move on to the EDUCATION section, giving it the same treatment we gave the
+  EMPLOYMENT section.
+--> }}
+
+            {{#section 'certificates' _icon="icon-samples"}}
+            <hr>
+            <section id="certificates">
+                <header>
+                    <h2>{{{sectionTitle "Certificates"}}}</h2>
+                </header>
+
+                <span class="fa fa-lg fa-share"></span>
+                {{#each r.certificates}}
+                {{#> body-certificates }}
+                <div>
+                    <h3>
+                        {{#if url}}
+                        <a href="{{{ url }}}" target="_blank" rel="noopener noreferrer">{{ title }}</a>
+                        {{else}}
+                        {{ title }}
+                        {{/if}}
+                    </h3>
+                    <span class="tenure">{{date date 'YYYY-MM'}}</span>
+                    {{{ summary }}}
+                    {{> highlights }}
+                </div>
+                {{/body-certificates}}
+                {{/each}}
+            </section>
+            {{/section}}
+
+
             {{! <!--
   Move on to the EDUCATION section, giving it the same treatment we gave the
   EMPLOYMENT section.
@@ -319,7 +359,7 @@ also doesn't render any content.
             <div>
                 <h3>{{#if title}}<em>{{ title }}</em>,{{/if}}
                     {{#if url}}
-                    <a href="{{{ url }}}">{{ institution }}</a>
+                    <a href="{{{ url }}}" target="_blank" rel="noopener noreferrer">{{ institution }}</a>
                     {{else}}
                     {{ institution }}
                     {{/if}}
@@ -348,7 +388,7 @@ also doesn't render any content.
             <div>
                 <h3>{{#if role}}<em>{{{ role }}}</em>,{{/if}}
                     {{#if url}}
-                    <a href="{{{ url }}}">{{{ organization }}}</a>
+                    <a href="{{{ url }}}" target="_blank" rel="noopener noreferrer">{{{ organization }}}</a>
                     {{else}}
                     {{{ organization }}}
                     {{/if}}
@@ -401,7 +441,7 @@ also doesn't render any content.
             {{> section/service _icon="icon-service"}}
             {{> section/extracurricular _icon="icon-extracurricular"}}
             {{> section/affiliation _icon="icon-affiliation"}}
-            {{> section/samples _icon="icon-samples"}}
+
             {{> section/writing _icon="icon-writing"}}
             {{> section/reading _icon="icon-reading"}}
             {{> section/recognition _icon="icon-recognition"}}

@@ -121,6 +121,9 @@
   TL;DR Always wrap your sections with the "section"!
 --> }}
 
+
+
+
 {{! <!--
 
   So much for SKILLS. Now let's render the EMPLOYMENT section.
@@ -179,9 +182,13 @@ also doesn't render any content.
     </h3>
     <span class="tenure">{{dateRange .}}</span> |
     <span class="tenure">{{location}}</span>
-    {{#if keywords}}
-    {{#if start}}| {{/if}}<span class="keywords">{{#each keywords}}{{{ . }}}, {{/each}}</span>
-    {{/if}}
+
+              {{#if keywords}}
+              <br><br>
+              <span
+                      class="keywords"><span style="font-weight: bold">Technology: </span> {{#each keywords}}{{{ . }}}, {{/each}}</span>
+              {{/if}}
+
   {{#if projects}}
   {{#each projects}}
   <p>{{{ summary }}}</p>
@@ -200,15 +207,53 @@ also doesn't render any content.
 
 {{> section/employment _icon="icon-employment"}}
 
+            <br>
+            <br>
+            <br>
+            <br>
+
+            {{#section 'skills' }}
+            <hr>
+            <section id="skills">
+                <header>
+                    <h2>{{{sectionTitle "Skills"}}}</h2>
+                </header>
+                <span class="fa fa-lg fa-code"></span>
+                <ul class="list-unstyled">
+                    {{#each r.skills.sets}}
+                    <li class="card card-nested card-skills">
+                        <!--                    <div class="skill-level" rel="tooltip" title="{{ level }}"-->
+                        <!--                         data-placement="left">-->
+                        <!--                        <div class="skill-progress {{toLower level }}"></div>-->
+                        <!--                    </div>-->
+                        <div class="skill-info">
+                            <strong>{{ name }}</strong>
+                            <div class="space-top labels">
+                                {{#if skills}}
+                                {{#each skills}}
+                                <div class="label label-keyword">
+                                    <span class="kw">{{ this }}</span>
+                                    {{#ifHasSkill @root.r .}}
+                                    <span class="notes">{{skillYears . }} years</span>
+                                    {{/ifHasSkill}}
+                                </div>
+                                {{/each}}
+                                {{/if}}
+                            </div>
+                        </div>
+                    </li>
+                    {{/each}}
+                </ul>
+            </section>
+            {{/section}}
 
 {{! <!--
   Move on to the PROJECTS section, giving it the same treatment we gave the
   EMPLOYMENT section.
 --> }}
 
-
 {{#*inline "body-projects" }}
-<div class="fill-box"></div>
+<!--<div class="fill-box"></div>-->
 <div>
 <h3>{{#if role}}<em>{{camelCase role }}</em>,{{/if}}
 {{#if url}}
@@ -229,6 +274,39 @@ also doesn't render any content.
 {{#*inline "icon-projects"}}<span class="fa fa-lg fa-star"></span>{{/inline}}
 
 {{> section/projects _icon="icon-projects"}}
+
+
+            {{! <!--
+  Move on to the EDUCATION section, giving it the same treatment we gave the
+  EMPLOYMENT section.
+--> }}
+
+            {{#section 'certificates' _icon="icon-samples"}}
+            <hr>
+            <section id="certificates">
+                <header>
+                    <h2>{{{sectionTitle "Certificates"}}}</h2>
+                </header>
+
+                <span class="fa fa-lg fa-share"></span>
+                {{#each r.certificates}}
+                {{#> body-certificates }}
+                <div>
+                    <h3>
+                        {{#if url}}
+                        <a href="{{{ url }}}">{{ title }}</a>
+                        {{else}}
+                        {{ title }}
+                        {{/if}}
+                    </h3>
+                    <span class="tenure">{{date date 'YYYY-MM'}}</span>
+                    {{{ summary }}}
+                    {{> highlights }}
+                </div>
+                {{/body-certificates}}
+                {{/each}}
+            </section>
+            {{/section}}
 
 {{! <!--
   Move on to the EDUCATION section, giving it the same treatment we gave the
@@ -313,6 +391,9 @@ also doesn't render any content.
           </section>
           {{/section}}
 
+            <br>
+            <br>
+
           {{! <!--
   We'll override all section heading icons the same way, for the rest of the
   resume, using the same inline template technique.
@@ -329,25 +410,6 @@ also doesn't render any content.
           {{> section/testimonials _icon="icon-testimonials"}}
           {{> section/references _icon="icon-references"}}
 
-          {{#section "interests"}}
-          <hr>
-          <section id="interests">
-            <header>
-              <h2>{{{sectionTitle "Interests"}}}</h2>
-            </header>
-
-            <span class="fa fa-lg fa-bicycle"></span>
-            <div class="row">
-              {{#each r.interests}}
-              <div class="col-md-6 interests-padding">
-                <h3><em>{{{ name }}}</em></h3>
-                {{{ summary }}}
-                {{> highlights }}
-              </div>
-              {{/each}}
-            </div>
-          </section>
-          {{/section}}
 
 {{! <!--
   We'll override all section heading icons the same way, for the rest of the

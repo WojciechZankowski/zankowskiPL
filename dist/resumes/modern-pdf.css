@@ -25,7 +25,7 @@ body.pdf {
 /* Adobe or wkhtmltopdf has issues with the <main> tag, so we use <div> for
 the PDF case, <main> for the HTML case, and style both via an ID. */
 #main {
-  background-color: #FFF;
+  background-color: #fff;
   margin: 10px;
   padding: 10px;
 }
@@ -50,7 +50,7 @@ body.pdf #container > header {
 }
 
 section > div {
-  margin-bottom: 60px;
+  margin-bottom: 15px;
 }
 
 span.fa
@@ -60,7 +60,7 @@ span.fa
   top: 37px;
   transform: translateY(-50%);
   left: -100px;
-  color: #9a7000;
+  color: #222;
 }
 
 hr {
@@ -74,6 +74,10 @@ hr {
   font-size: 75%;
 }
 
+.keywords {
+  font-size: 100%;
+}
+
 h1 {
   margin: 0;
   font-size: 46px;
@@ -82,11 +86,11 @@ h1 {
 
 h2 {
   font-size: 30px;
-  color: #bf9000;
+  color: #333;
   text-transform: uppercase;
   font-weight: normal;
   padding-top: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 h3 {
@@ -95,7 +99,7 @@ h3 {
 }
 
 a, a:visited {
-  color: #bf9000;
+  color: #333;
   text-decoration: none;
   font-weight: bold;
 }
@@ -144,7 +148,7 @@ a:hover {
   color: black;
   font-size: 0.9em;
   padding: 5px;
-  border: 1px solid #bf9000;
+  border: 1px solid #333;
   border-radius: 5px;
   margin-top: 2px;
   font-weight: bold;
@@ -163,12 +167,13 @@ a:hover {
 }
 .card-nested {
     min-height: 0;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
     border-width: 1px 0 0 0;
 }
 .card {
-    background: #FFF;
-    border-radius: 3px;
+    background: #fff;
+    /*border-radius: 3px;*/
+    border: 0px;
     padding: 10px;
 }
 

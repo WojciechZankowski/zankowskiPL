@@ -11,10 +11,12 @@ body {
   font-size: 15px;
   color: #333;
   line-height: 1.42857143;
-  background-color: #FFFFFF;
+  background-color: #fdfdfd;
+  min-width: 800px;
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Calibri', 'sans-serif';
+
 }
 
 /* Typical page borders are awkward when rendered to PDF. */
@@ -25,9 +27,10 @@ body.pdf {
 /* Adobe or wkhtmltopdf has issues with the <main> tag, so we use <div> for
 the PDF case, <main> for the HTML case, and style both via an ID. */
 #main {
-  background-color: #FFF;
+  background-color: #fdfdfd;
   margin: 10px;
   padding: 10px;
+  min-width: 800px;
 }
 
 body.pdf > #main {
@@ -35,7 +38,7 @@ body.pdf > #main {
 }
 
 #container > header {
-  padding-top: 6em;
+  padding-top: 4em;
   padding-bottom: 1em;
 }
 
@@ -50,7 +53,7 @@ body.pdf #container > header {
 }
 
 section > div {
-  margin-bottom: 60px;
+  margin-bottom: 15px;
 }
 
 span.fa
@@ -60,7 +63,7 @@ span.fa
   top: 37px;
   transform: translateY(-50%);
   left: -100px;
-  color: #9a7000;
+  color: #222;
 }
 
 hr {
@@ -74,6 +77,10 @@ hr {
   font-size: 75%;
 }
 
+.keywords {
+  font-size: 100%;
+}
+
 h1 {
   margin: 0;
   font-size: 46px;
@@ -82,11 +89,11 @@ h1 {
 
 h2 {
   font-size: 30px;
-  color: #bf9000;
+  color: #333;
   text-transform: uppercase;
   font-weight: normal;
   padding-top: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 h3 {
@@ -94,13 +101,18 @@ h3 {
   font-size: 18px;
 }
 
+.default-margin {
+  margin-top: 10px;
+}
+
 a, a:visited {
-  color: #bf9000;
+  color: #333;
   text-decoration: none;
   font-weight: bold;
 }
 
 a:hover {
+  color: #333;
   text-decoration: underline;
 }
 
@@ -144,7 +156,7 @@ a:hover {
   color: black;
   font-size: 0.9em;
   padding: 5px;
-  border: 1px solid #bf9000;
+  border: 1px solid #333;
   border-radius: 5px;
   margin-top: 2px;
   font-weight: bold;
@@ -167,9 +179,9 @@ a:hover {
     border-width: 1px 0 0 0;
 }
 .card {
-    background: #FFF;
+    background: #fdfdfd;
     border-radius: 3px;
-    padding: 10px;
+    padding: 10px 0 10px 0;
 }
 
 .skill-level {
@@ -233,7 +245,7 @@ a:hover {
 }
 
 #container {
-  max-width: 800px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 

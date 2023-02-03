@@ -37,7 +37,7 @@ body.pdf {
 /* Adobe or wkhtmltopdf has issues with the <main> tag, so we use <div> for
 the PDF case, <main> for the HTML case, and style both via an ID. */
 #main {
-  background-color: #FFF;
+  background-color: #fff;
   margin: 10px;
   padding: 10px;
 }
@@ -62,7 +62,7 @@ body.pdf #container > header {
 }
 
 section > div {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 span.fa
@@ -72,7 +72,7 @@ span.fa
   top: 37px;
   transform: translateY(-50%);
   left: -100px;
-  color: #9a7000;
+  color: #222;
 }
 
 hr {
@@ -86,6 +86,10 @@ hr {
   font-size: 75%;
 }
 
+.keywords {
+  font-size: 100%;
+}
+
 h1 {
   margin: 0;
   font-size: 46px;
@@ -94,11 +98,11 @@ h1 {
 
 h2 {
   font-size: 30px;
-  color: #bf9000;
+  color: #333;
   text-transform: uppercase;
   font-weight: normal;
   padding-top: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 h3 {
@@ -107,7 +111,7 @@ h3 {
 }
 
 a, a:visited {
-  color: #bf9000;
+  color: #333;
   text-decoration: none;
   font-weight: bold;
 }
@@ -156,7 +160,7 @@ a:hover {
   color: black;
   font-size: 0.9em;
   padding: 5px;
-  border: 1px solid #bf9000;
+  border: 1px solid #333;
   border-radius: 5px;
   margin-top: 2px;
   font-weight: bold;
@@ -175,12 +179,13 @@ a:hover {
 }
 .card-nested {
     min-height: 0;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
     border-width: 1px 0 0 0;
 }
 .card {
-    background: #FFF;
-    border-radius: 3px;
+    background: #fff;
+    /*border-radius: 3px;*/
+    border: 0px;
     padding: 10px;
 }
 
@@ -303,10 +308,10 @@ a:hover {
         <h1>Wojciech Zankowski</h1>
 
         <div id="contact">
-          <div class="email"><a href="mailto:wojciech(@at)zankowski.pl">wojciech(@at)zankowski.pl</a></div>
+          <div class="email"><a href="mailto:wojciech(@at)zankowski.ch">wojciech(@at)zankowski.ch</a></div>
           
           <div class="website"><a href="https://github.com/WojciechZankowski">https://github.com/WojciechZankowski</a></div>
-          <div class="website"><a href="https://www.zankowski.pl">https://www.zankowski.pl</a></div>
+          <div class="website"><a href="https://www.zankowski.ch">https://www.zankowski.ch</a></div>
         </div>
       </header>
 
@@ -332,6 +337,9 @@ a:hover {
 
 
 
+
+
+
 <hr>
 <section id="employment">
     <header>
@@ -339,12 +347,30 @@ a:hover {
     </header>
 
         <div class="stack-employment">
-  <h3><em>Lead Software Engineer,</em>
+  <h3><em>Vice President,</em>
     <a href="https://www.credit-suisse.com/international/en/wealth-management.html">Credit Suisse AG</a>
     </h3>
-    <span class="tenure">2019-09 — Present</span> |
+    <span class="tenure">2022-03 — Present</span> |
     <span class="tenure">Zürich, Switzerland</span>
-    | <span class="keywords">Java SE 8, Google Guice, Google Guava, Oracle DB, Angular 4+, Typescript, D3.js, AngularJS, Enterprise Architect, JProfiler, Splunk, </span>
+
+              <br><br>
+              <span
+                      class="keywords"><span style="font-weight: bold">Technology: </span> Java SE 17, Spring Boot, OpenAPI, Apache Kafka, GraphQL, </span>
+
+  <p><p>International Wealth Management</p>
+</p>
+  <ul>
+    <li>Platform modernization and consolidation</li>
+  </ul>
+</div>
+        <div class="stack-employment">
+  <h3><em>Lead Software Engineer,</em>
+    <a href="https://www.credit-suisse.com/international/en/wealth-management.html">Luxoft Financial Services AG (for Credit Suisse AG)</a>
+    </h3>
+    <span class="tenure">2019-09 — 2022-02</span> |
+    <span class="tenure">Zürich, Switzerland</span>
+
+
 </div>
         <div class="stack-employment">
   <h3><em>Senior Software Engineer</em>
@@ -352,6 +378,8 @@ a:hover {
     </h3>
     <span class="tenure">2019-04 — 2019-08</span> |
     <span class="tenure">Zürich, Switzerland</span>
+
+
 </div>
         <div class="stack-employment">
   <h3><em>Senior Software Engineer</em>
@@ -359,6 +387,8 @@ a:hover {
     </h3>
     <span class="tenure">2018-10 — 2019-03</span> |
     <span class="tenure">Wroclaw, Poland</span>
+
+
 </div>
           <div>
   <h3><em>Software Engineer</em>
@@ -366,6 +396,11 @@ a:hover {
     </h3>
     <span class="tenure">2017-08 — 2018-10</span> |
     <span class="tenure">Wroclaw, Poland</span>
+
+              <br><br>
+              <span
+                      class="keywords"><span style="font-weight: bold">Technology: </span> Java SE 8, Java EE, Google Guice, Google Guava, Hibernate, Oracle DB, Angular 4+, Typescript, D3.js, AngularJS, Enterprise Architect, JProfiler, Liquibase, Splunk, </span>
+
   <p><p>International Wealth Management - Portfolio Solutions</p>
 </p>
   <ul>
@@ -378,45 +413,206 @@ a:hover {
   </ul>
 </div>
           <div>
-  <h3><em>Software Engineer / Product Owner,</em>
+  <h3><em>Software Engineer,</em>
     <a href="https://empirica.io">Empirica S.A.</a>
     </h3>
     <span class="tenure">2015-07 — 2017-08</span> |
     <span class="tenure">Wroclaw, Poland</span>
-    | <span class="keywords">Java SE 8, FIX 4.2/5.0 Protocol, Spring Framework, SOAP Web Services, JMX, MySQL, Chronicle, Maven, Hudson, Eclipse, Eclipse MAT, VisualVM, JConsole, Hibernate, REST Services, IDEA Intellij, AngularJS, NodeJS, </span>
+
+              <br><br>
+              <span
+                      class="keywords"><span style="font-weight: bold">Technology: </span> Java SE 8, FIX 4.2/5.0 Protocol, Java Swing, Spring Framework, Spring Boot, MySQL, Chronicle, Hudson, Eclipse MAT, VisualVM, JConsole, Hibernate, AngularJS, </span>
+
+  <p><p>Algorithmic Trading Platform</p>
+</p>
+  <ul>
+    <li>Order Engine, Portfolio Monitoring, Strategy Executor and Backtesting platform development</li>
+    <li>Trading strategies implementation for market makers</li>
+    <li>FIX Brokers integration, e.g. Interactive Brokers</li>
+    <li>Market Data Feeds integration, e.g. Oanda, Interactive Brokers</li>
+    <li>System maintenance</li>
+  </ul>
   <p><p>Robo Advisory Platform</p>
 </p>
   <ul>
-    <li>Defining specification for Robo-Advisory platform (Product Owner of the project)</li>
+    <li>Implementation of portfolio re-balancing logic, building REST and Web Socket services</li>
+    <li>Defining specification for Robo-Advisory platform</li>
     <li>Taking part in system architecture and planning integrations with external systems</li>
-    <li>Implementation of portfolio rebalancing logic</li>
-    <li>Building REST and Web Socket services</li>
     <li>Leading project and determining requirements for development team</li>
     <li>Contact with clients and taking part in client meetings</li>
     <li>Leading Scrum ceremonies: backlog refinement, sprint planning</li>
   </ul>
-  <p><p>Algorithmic Trading Platform</p>
-</p>
-  <ul>
-    <li>Trading strategies implementation for market makers</li>
-    <li>FIX Brokers integration, e.g. Interactive Brokers</li>
-    <li>Market Data Feeds integration, e.g. Oanda, Interactive Brokers</li>
-    <li>Backtest platform development</li>
-    <li>System maintenance</li>
-  </ul>
 </div>
 </section>
 
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <hr>
+            <section id="skills">
+                <header>
+                    <h2>Skills</h2>
+                </header>
+                <span class="fa fa-lg fa-code"></span>
+                <ul class="list-unstyled">
+                    <li class="card card-nested card-skills">
+                        <!--                    <div class="skill-level" rel="tooltip" title=""-->
+                        <!--                         data-placement="left">-->
+                        <!--                        <div class="skill-progress "></div>-->
+                        <!--                    </div>-->
+                        <div class="skill-info">
+                            <strong>Backend</strong>
+                            <div class="space-top labels">
+                                <div class="label label-keyword">
+                                    <span class="kw">Java</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">Java EE</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">FIX Protocol 4.2 - 5.0</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">Spring Framework</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">Spring Boot</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">Hibernate</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">Google Guice</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">Python</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">Oracle DB</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">MySQL</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">Liquibase</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-nested card-skills">
+                        <!--                    <div class="skill-level" rel="tooltip" title=""-->
+                        <!--                         data-placement="left">-->
+                        <!--                        <div class="skill-progress "></div>-->
+                        <!--                    </div>-->
+                        <div class="skill-info">
+                            <strong>Frontend</strong>
+                            <div class="space-top labels">
+                                <div class="label label-keyword">
+                                    <span class="kw">Angular 2+</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">Typescript</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">D3.js</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">HTML</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">CSS</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">Java Swing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-nested card-skills">
+                        <!--                    <div class="skill-level" rel="tooltip" title=""-->
+                        <!--                         data-placement="left">-->
+                        <!--                        <div class="skill-progress "></div>-->
+                        <!--                    </div>-->
+                        <div class="skill-info">
+                            <strong>Tools</strong>
+                            <div class="space-top labels">
+                                <div class="label label-keyword">
+                                    <span class="kw">Intellij IDEA</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">Eclipse</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">GIT</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">SVN</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">Docker</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">Eclipse MAT</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">VisualVM</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">JProfile</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">JMeter</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">Splunk</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">Maven</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-nested card-skills">
+                        <!--                    <div class="skill-level" rel="tooltip" title=""-->
+                        <!--                         data-placement="left">-->
+                        <!--                        <div class="skill-progress "></div>-->
+                        <!--                    </div>-->
+                        <div class="skill-info">
+                            <strong>Other</strong>
+                            <div class="space-top labels">
+                                <div class="label label-keyword">
+                                    <span class="kw">TeamCity</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">Jenkins</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">Enterprise Architect</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">Gliffy</span>
+                                </div>
+                                <div class="label label-keyword">
+                                    <span class="kw">Balsamiq</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
 
 
 
 
-<div class="fill-box"></div>
 
+<hr>
 <section id="projects">
     <header>
       <span class="fa fa-lg fa-star"></span>  <h2>projects</h2>
     </header>
+<!--<div class="fill-box"></div>-->
 <div>
 <h3>
 <a href="https://github.com/WojciechZankowski/iextrading4j">IEXTrading4j</a>
@@ -426,6 +622,31 @@ a:hover {
 
 </div>
 </section>
+
+
+
+            <hr>
+            <section id="certificates">
+                <header>
+                    <h2>Certificates</h2>
+                </header>
+
+                <span class="fa fa-lg fa-share"></span>
+                <div>
+                    <h3>
+                        <a href="https://education.oracle.com/oracle-certified-professional-java-se-17-developer/trackp_OCPJSE17">Oracle Certified Professional: Java SE 17 Developer</a>
+                    </h3>
+                    <span class="tenure">2022-12</span>
+                    
+                </div>
+                <div>
+                    <h3>
+                        <a href="https://education.oracle.com/oracle-certified-professional-java-se-11-developer/trackp_OCPJAV11">Oracle Certified Professional: Java SE 11 Developer</a>
+                    </h3>
+                    <span class="tenure">2021-04</span>
+                    
+                </div>
+            </section>
 
 
 
@@ -464,25 +685,28 @@ a:hover {
             </header>
             <span class="fa fa-lg fa-language"></span>
 
-            <div class="row">
-              <div class="col-md-3 languages-padding">
+            <div class="row languages">
+              <div class="col-md-6 languages-padding">
                 <h3><em>English</em></h3>
                 Fluent
               </div>
-              <div class="col-md-3 languages-padding">
+              <div class="col-md-6 languages-padding">
                 <h3><em>Spanish</em></h3>
                 Fluent
               </div>
-              <div class="col-md-3 languages-padding">
+              <div class="col-md-6 languages-padding">
                 <h3><em>German</em></h3>
                 Basic
               </div>
-              <div class="col-md-3 languages-padding">
+              <div class="col-md-6 languages-padding">
                 <h3><em>Polish</em></h3>
                 Native
               </div>
             </div>
           </section>
+
+            <br>
+            <br>
 
 
           <hr>
@@ -490,8 +714,8 @@ a:hover {
               <header>
                 <span class="fa fa-lg fa-quote-left"></span>  <h2>testimonials</h2>
               </header>
-              <div style="margin-bottom: 10px">
-              <h3><em>Jakub Baczkiewicz - Senior Software QA @ Capgemini</em></h3>
+              <div>
+              <h3><em>Jakub Bączkiewicz - Senior Software QA @ Capgemini</em></h3>
               <p>Wojciech is a role model both in IT world and private life. He has outstanding knowledge regarding programming and software development and is a natural-born leader. He is passionate about what he is doing and always takes responsibility for his and he&#39;s team decisions. He has clear vision of the projects he&#39;s working in, persistently pursues his goals and makes impossible - possible. I strongly recommend him as your future coworker, teammate and leader.</p>
               </div>
               <div>
@@ -500,26 +724,6 @@ a:hover {
               </div>
           </section>
 
-          <hr>
-          <section id="interests">
-            <header>
-              <h2>Interests</h2>
-            </header>
-
-            <span class="fa fa-lg fa-bicycle"></span>
-            <div class="row" style="margin-bottom: 0px">
-              <div class="col-md-6 interests-padding">
-                <h3><em>Sports</em></h3>
-                <p>Football, Trail running, Squash, Tennis</p>
-
-              </div>
-              <div class="col-md-6 interests-padding">
-                <h3><em>Puzzle</em></h3>
-                <p>Rubik&#39;s Cube, Sudoku</p>
-
-              </div>
-            </div>
-          </section>
 
 
 

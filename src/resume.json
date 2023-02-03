@@ -5,16 +5,18 @@
     "version": "0.5.0"
   },
   "contact": {
-    "website": "https://www.zankowski.pl",
+    "website": "https://www.zankowski.ch",
     "github": "https://github.com/WojciechZankowski",
-    "email": "wojciech(@at)zankowski.pl",
+    "email": "wojciech(@at)zankowski.ch",
     "other": []
   },
-  "profiles": [{
-    "network": "GitHub",
-    "username": "john",
-    "url": "http://twitter.com/john"
-  }],
+  "profiles": [
+    {
+      "network": "GitHub",
+      "username": "john",
+      "url": "http://twitter.com/john"
+    }
+  ],
   "info": {
     "brief": "**Self-driven, passionate and committed software engineer specializing in market trading and asset management discipline.** Flexible with languages, tools and everything that leads to good solution. Enjoying his life in the beautiful area of Zürich."
   },
@@ -30,6 +32,18 @@
       "media": []
     }
   ],
+  "certificates": [
+    {
+      "title": "Oracle Certified Professional: Java SE 17 Developer",
+      "url": "https://education.oracle.com/oracle-certified-professional-java-se-17-developer/trackp_OCPJSE17",
+      "date": "2022-12"
+    },
+    {
+      "title": "Oracle Certified Professional: Java SE 11 Developer",
+      "url": "https://education.oracle.com/oracle-certified-professional-java-se-11-developer/trackp_OCPJAV11",
+      "date": "2021-04"
+    }
+  ],
   "social": [
     {
       "label": "GitHub",
@@ -43,24 +57,36 @@
       {
         "employer": "Credit Suisse AG",
         "url": "https://www.credit-suisse.com/international/en/wealth-management.html",
+        "position": "Vice President",
+        "summary": "",
+        "start": "2022-03",
+        "end": "Present",
+        "location": "Zürich, Switzerland",
+        "stack": "false",
+        "keywords": [
+          "Java SE 17",
+          "Spring Boot",
+          "OpenAPI",
+          "Apache Kafka",
+          "GraphQL"
+        ],
+        "projects": [
+          {
+            "summary": "International Wealth Management",
+            "highlights": [
+              "Platform modernization and consolidation"
+            ]
+          }
+        ]
+      },
+      {
+        "employer": "Luxoft Financial Services AG (for Credit Suisse AG)",
+        "url": "https://www.credit-suisse.com/international/en/wealth-management.html",
         "position": "Lead Software Engineer",
         "summary": "",
         "start": "2019-09",
-        "end": "Present",
+        "end": "2022-02",
         "location": "Zürich, Switzerland",
-        "keywords": [
-          "Java SE 8",
-          "Google Guice",
-          "Google Guava",
-          "Oracle DB",
-          "Angular 4+",
-          "Typescript",
-          "D3.js",
-          "AngularJS",
-          "Enterprise Architect",
-          "JProfiler",
-          "Splunk"
-        ],
         "stack": "true"
       },
       {
@@ -86,6 +112,22 @@
         "start": "2017-08",
         "end": "2018-10",
         "location": "Wroclaw, Poland",
+        "keywords": [
+          "Java SE 8",
+          "Java EE",
+          "Google Guice",
+          "Google Guava",
+          "Hibernate",
+          "Oracle DB",
+          "Angular 4+",
+          "Typescript",
+          "D3.js",
+          "AngularJS",
+          "Enterprise Architect",
+          "JProfiler",
+          "Liquibase",
+          "Splunk"
+        ],
         "projects": [
           {
             "summary": "International Wealth Management - Portfolio Solutions",
@@ -103,7 +145,7 @@
       {
         "employer": "Empirica S.A.",
         "url": "https://empirica.io",
-        "position": "Software Engineer / Product Owner",
+        "position": "Software Engineer",
         "summary": "",
         "start": "2015-07",
         "end": "2017-08",
@@ -111,44 +153,38 @@
         "keywords": [
           "Java SE 8",
           "FIX 4.2/5.0 Protocol",
+          "Java Swing",
           "Spring Framework",
-          "SOAP Web Services",
-          "JMX",
+          "Spring Boot",
           "MySQL",
           "Chronicle",
-          "Maven",
           "Hudson",
-          "Eclipse",
           "Eclipse MAT",
           "VisualVM",
           "JConsole",
           "Hibernate",
-          "REST Services",
-          "IDEA Intellij",
-          "AngularJS",
-          "NodeJS"
+          "AngularJS"
         ],
         "projects": [
           {
-            "summary": "Robo Advisory Platform",
-            "highlights": [
-              "Defining specification for Robo-Advisory platform (Product Owner of the project)",
-              "Taking part in system architecture and planning integrations with external systems",
-              "Implementation of portfolio rebalancing logic",
-              "Building REST and Web Socket services",
-              "Leading project and determining requirements for development team",
-              "Contact with clients and taking part in client meetings",
-              "Leading Scrum ceremonies: backlog refinement, sprint planning"
-              ]
-          },
-          {
             "summary": "Algorithmic Trading Platform",
             "highlights": [
+              "Order Engine, Portfolio Monitoring, Strategy Executor and Backtesting platform development",
               "Trading strategies implementation for market makers",
               "FIX Brokers integration, e.g. Interactive Brokers",
               "Market Data Feeds integration, e.g. Oanda, Interactive Brokers",
-              "Backtest platform development",
               "System maintenance"
+            ]
+          },
+          {
+            "summary": "Robo Advisory Platform",
+            "highlights": [
+              "Implementation of portfolio re-balancing logic, building REST and Web Socket services",
+              "Defining specification for Robo-Advisory platform",
+              "Taking part in system architecture and planning integrations with external systems",
+              "Leading project and determining requirements for development team",
+              "Contact with clients and taking part in client meetings",
+              "Leading Scrum ceremonies: backlog refinement, sprint planning"
             ]
           }
         ]
@@ -177,13 +213,15 @@
         "skills": [
           "Java",
           "Java EE",
-          "FIX 4.2 - 5.0",
+          "FIX Protocol 4.2 - 5.0",
           "Spring Framework",
           "Spring Boot",
           "Hibernate",
           "Google Guice",
           "Python",
-          "SQL - MySQL, Oracle"
+          "Oracle DB",
+          "MySQL",
+          "Liquibase"
         ]
       },
       {
@@ -191,9 +229,10 @@
         "skills": [
           "Angular 2+",
           "Typescript",
-          "D3 charts",
+          "D3.js",
           "HTML",
-          "CSS"
+          "CSS",
+          "Java Swing"
         ]
       },
       {
@@ -208,8 +247,8 @@
           "VisualVM",
           "JProfile",
           "JMeter",
-          "SoapUI",
-          "Postman"
+          "Splunk",
+          "Maven"
         ]
       },
       {
